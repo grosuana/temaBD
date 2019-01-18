@@ -37,6 +37,7 @@ app.get('/login', function(req, res) {
     });
 })
 
+
 app.get('/databaseNames', function(req, res) {
     database.query("SELECT table_name FROM information_schema.tables where table_schema='mobilaComanda'", (error, results, fields) => {
         ///console.log(results)
